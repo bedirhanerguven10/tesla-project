@@ -1,0 +1,111 @@
+@import url('https://fonts.googleapis.com/css2?family=Russo+One&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: gainsboro;
+    height: 100%;
+    width: 100%;
+    
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+}
+
+.logo {
+    margin-left: 30px;
+    width: 80px;
+    margin-top: 25px;
+}
+
+ul {
+    display: flex;
+    justify-content: space-around;
+    margin-right: 30px;
+    
+}
+
+li {
+    list-style: none;
+    margin-left: 50px;
+    margin-top: 40px;
+}
+
+li a {
+    text-decoration: none;
+    color: black;
+    font-family: 'Russo One', sans-serif;
+}
+
+li a::after {
+    content: '';
+    width: 0;
+    height: 2px;
+    background-color: black;
+    margin: auto;
+    display: block;
+}
+
+li a:hover::after {
+    width: 100%;
+    transition: width 0.4s linear;
+}
+
+main .content {
+    margin-top: 10%;
+    margin-left: 8%;
+}
+
+main h1 {
+    font-size: 300%;
+    font-weight: 800;
+}
+
+.content button {
+    margin-top: 20px;
+    padding: 10px 30px;
+    border: none;
+    border-radius: 20px;
+    background-color: rgba(20, 10 , 12, 0.5);
+    font-weight: bolder;
+    font-family: 'Concert One', cursive;
+    font-size: 1rem;
+}
+
+button:hover {
+    background-color: black;
+    color: white;
+}
+
+.content p {
+    width: 600px;
+    line-height: 30px;
+    text-align: justify;
+    margin-top: 25px;
+}
+
+.car {
+    width: 500px;
+    margin-top:-180px;
+    margin-left: 50%;
+}
+
+.tesla {
+    animation: anm 10s linear infinite;
+}
+
+@keyframes anm {
+    50% {
+        transform: translate(30%, -60%);
+    }
+}
+
+
+
+
